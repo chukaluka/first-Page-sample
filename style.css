@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.active {
+    font-weight: bold;
+    color: hsl(73, 100%, 50%);
+    text-decoration: underline;
+}
+
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    color: whitesmoke;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links li {
+    list-style: none;
+    margin: 0 30px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+}
+
+.menu {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 6px 0;
+}
+
+section {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('image/pic.jfif');
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.home-content {
+    margin-bottom: 270px;
+    color: whitesmoke;
+    text-align: center;
+}
+
+.home-content h2 {
+    font-size: 25px;
+}
+
+.line {
+    width: 100px;
+    height: 4px;
+    background-color: hsl(59, 86%, 52%);
+    margin: 10px auto 10px 190px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.home-content h1 {
+    font-style: italic;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    margin-top: 45px;
+}
+
+.menu-btn {
+    width: 35px;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+@media only screen and (max-width:850px) {
+    .menu-btn {
+        display: block;
+    }
+    .navbar {
+        padding: 0;
+    }
+    .logo {
+        position: absolute;
+        top: 30px;
+        left: 30px;
+    }
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        background-color: hsl(51, 73%, 34%);
+        margin-top: -900px;
+        transition: all 0.5s ease;
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -ms-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+    }
+    .mobile-menu {
+        margin-top: 0px;
+        border-bottom-right-radius: 50%;
+    }
+    .nav-links li {
+        margin: 30px auto;
+    }
+}
